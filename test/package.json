@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "all": "npm run esbuild & npm run rollup & npm run vite & npm run webpack & wait",
+    "esbuild": "node esbuild.config.js",
+    "rollup": "rollup -c",
+    "vite": "vite build",
+    "webpack": "webpack"
+  },
+  "version": "1.0.0",
+  "d": {
+    "d": 4
+  }
+}
