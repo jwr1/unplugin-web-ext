@@ -1,10 +1,11 @@
 {
   "name": "unplugin-web-ext",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simplify web extension creation with Webpack, Rollup, Vite, and esbuild.",
   "scripts": {
     "build": "tsc",
-    "test": "cd test && npm run all && ava"
+    "test": "cd test && npm run all && ava",
+    "build-publish": "rm -r dist && npm run build && npm run test && cp package.json dist && cp LICENSE dist"
   },
   "repository": {
     "type": "git",
